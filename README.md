@@ -1,6 +1,4 @@
-# co_SOC
-
-![ololo-pishpish](https://github.com/ISAIandCO/co_SOC/tree/main/Trash/SOCdo.jpg)
+# CO_SOC
 
 ## Содержание репозитория
 
