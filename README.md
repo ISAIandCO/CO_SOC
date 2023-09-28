@@ -6,18 +6,18 @@
 
 | Наименование | Тип | Описание |
 | ------------ | --- | -------- |
-| Zircolite | Analysis | Форк проекта [Zircolite](https://github.com/wagga40/Zircolite) с модифицированием схемы обновления (для доступа через proxy) и полуавтоматическим режимом |
+| [Zircolite](https://github.com/ISAIandCO/co_SOC/tree/main/Zircolite) | Analysis | Форк проекта [Zircolite](https://github.com/wagga40/Zircolite) с модифицированием схемы обновления (для доступа через proxy) и полуавтоматическим режимом |
 
 ### Скрипты
 
 | Наименование | Тип | Описание |
 | ------------ | --- | -------- |
-| GetEvent | IG | Массовая выгрузка журналов с функцией выбора отдельного промежутка |
-| SID-Name_Name-SID | IG | Получение информации из AD по сущностям при известном SID или SamAccountName |
-| DiskParse | IG | Получение содержимого всех подключенных дисков |
-| HASH_check | Analysis | Автоматизированний поиск хэшей файлов (Расположенных в папке "HASH_check" рядом со скриптом) в сети (VirusTotal, OpenTip) через API |
-| Eicar_Auto | Tool | Скрипт проверки работы СЗИ - через определенные промежутки создает файл EICAR (детектируется антивирусом) и пингует хост "Hello_There" (Требутся правило в СЗИ) |
-| AV_Update | Tool | Скрипт поддержания в актуальном состоянии антивирусных утилит (CureIT, KVRT и тд.) |
+| [GetEvent](https://github.com/ISAIandCO/co_SOC/tree/main/Scripts/GetEvent.ps1) | IG | Массовая выгрузка журналов с функцией выбора отдельного промежутка |
+| [SID-Name_Name-SID](https://github.com/ISAIandCO/co_SOC/tree/main/Scripts/SID-Name_Name-SID.ps1) | IG | Получение информации из AD по сущностям при известном SID или SamAccountName |
+| [DiskParse](https://github.com/ISAIandCO/co_SOC/tree/main/Scripts/DiskParse.ps1) | IG | Получение содержимого всех подключенных дисков |
+| [HASH_check](https://github.com/ISAIandCO/co_SOC/tree/main/Scripts/HASH_check.ps1) | Analysis | Автоматизированний поиск хэшей файлов (Расположенных в папке "HASH_check" рядом со скриптом) в сети (VirusTotal, OpenTip) через API |
+| [Eicar_Auto](https://github.com/ISAIandCO/co_SOC/tree/main/Scripts/Eicar_Auto.ps1) | Tool | Скрипт проверки работы СЗИ - через определенные промежутки создает файл EICAR (детектируется антивирусом) и пингует хост "Hello_There" (Требутся правило в СЗИ) |
+| [AV_Update](https://github.com/ISAIandCO/co_SOC/tree/main/Scripts/AV_Update.ps1) | Tool | Скрипт поддержания в актуальном состоянии антивирусных утилит (CureIT, KVRT и тд.) |
 
 
 ## Полезные ресурсы и ПО
