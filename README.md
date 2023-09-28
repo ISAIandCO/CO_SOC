@@ -5,9 +5,10 @@
 | Наименование | Тип | Описание |
 | ------------ | --- | -------- |
 | GetEvent | IG | Массовая выгрузка журналов с функцией выбора отдельного промежутка |
+| Zircolite | Analysis | Форк проекта [Zircolite](https://github.com/wagga40/Zircolite) с модифицированием схемы обновления (для доступа через proxy) и полуавтоматическим режимом |
 
 
-## Полезные ресурсы
+## Полезные ресурсы и ПО
 
 | Наименование | Тип | Описание |
 | ------------ | --- | -------- |
@@ -35,4 +36,4 @@
 |	[Tor Metrics](https://metrics.torproject.org)	|	OSINT	|	Информация об активных тор-нодах	|
 |	[Cuckoo](https://cuckoo.cert.ee)	|	Analysis	|	Sandbox	|
 |	[Pulsedive](https://pulsedive.com)	|	TI	|	Проверка сущностей (URL, Хэшы, файлы и тд.) на попадание в базы антивирусов, а также подгрузка общедоступной информации о них.	|
-|	[Zircolite](https://github.com/wagga40/Zircolite)	|	TI	|	Обработка 	|
+|	[Zircolite](https://github.com/wagga40/Zircolite)	|	TI	|	Анализ журналов системы с момощью заранее подготовленных правил (SIGMA и MITRE) |
