@@ -1,5 +1,7 @@
 # co_SOC
 
+![alt-текст](https://github.com/ISAIandCO/co_SOC/tree/main/Trash/SOCdo.jpg)
+
 ## Содержание репозитория
 
 ### ПО
