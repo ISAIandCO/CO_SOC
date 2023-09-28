@@ -1,14 +1,14 @@
 $cmd = ".\zircolite_win10.exe -e"
 
-if ($A=Read-Host "Нижняя граница в формате дд.мм.гг чч:мм:сс [Отсутствует]") {
+if ($A=Read-Host "РќРёР¶РЅСЏСЏ РіСЂР°РЅРёС†Р° РІ С„РѕСЂРјР°С‚Рµ РґРґ.РјРј.РіРі С‡С‡:РјРј:СЃСЃ [РћС‚СЃСѓС‚СЃС‚РІСѓРµС‚]") {
     $A=Get-Date -Format "yyyy-MM-ddTHH:mm:ss" ([datetime](Get-Date $A)).AddHours(-5)
     $time=" -A $A"
-    if ($B=Read-Host "Верхняя граница в формате дд.мм.гг чч:мм:сс [Отсутствует]") {
+    if ($B=Read-Host "Р’РµСЂС…РЅСЏСЏ РіСЂР°РЅРёС†Р° РІ С„РѕСЂРјР°С‚Рµ РґРґ.РјРј.РіРі С‡С‡:РјРј:СЃСЃ [РћС‚СЃСѓС‚СЃС‚РІСѓРµС‚]") {
         $B=Get-Date -Format "yyyy-MM-ddTHH:mm:ss" ([datetime](Get-Date $B)).AddHours(-5)
         $time=$time + " -B $B"} else {$B=Get-Date -Format "yyyy-MM-ddTHH:mm:ss" ([datetime](Get-Date)).AddHours(-5);$time=$time + " -B $B"}
 }
 
-switch ($lvl=Read-Host "Выберите тип анализа [Windows_Medium]
+switch ($lvl=Read-Host "Р’С‹Р±РµСЂРёС‚Рµ С‚РёРї Р°РЅР°Р»РёР·Р° [Windows_Medium]
 1. Windows_Full
 2. Windows_High
 3. Windows_Medium
@@ -23,6 +23,6 @@ switch ($lvl=Read-Host "Выберите тип анализа [Windows_Medium]
 
 powershell -command $cmd_a
 if ((Get-ChildItem .\detected_events.json).Length -le 10 -and $lvl -ne 4) {powershell -command $cmd_b}
-if ((Get-ChildItem .\detected_events.json).Length -le 10) {"События не найдены, проверьте ввод"; pause}
+if ((Get-ChildItem .\detected_events.json).Length -le 10) {"РЎРѕР±С‹С‚РёСЏ РЅРµ РЅР°Р№РґРµРЅС‹, РїСЂРѕРІРµСЂСЊС‚Рµ РІРІРѕРґ"; pause}
 rm detected_events.json
 rm zircolite.log

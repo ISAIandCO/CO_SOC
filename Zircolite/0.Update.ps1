@@ -1,5 +1,5 @@
 $WebClient = new-object System.Net.WebClient
-$WebClient.Headers.Add(“user-agent”, “PowerShell Script”)
+$WebClient.Headers.Add(â€œuser-agentâ€, â€œPowerShell Scriptâ€)
 $WebClient.Proxy.Credentials = [System.Net.CredentialCache]::DefaultNetworkCredentials
 [Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls, Ssl3"
 
@@ -8,12 +8,12 @@ function DownloadThisTo ([string]$url, [string]$path) {
 	$lfs = Get-ChildItem -Path $path | Measure-Object -Property Length -Sum
 	$rfs = (Invoke-WebRequest $url -Method Head).Headers.'Content-Length'
 	    if ($lfs.sum -ne $rfs) {
-            "Îáíîâëÿåòñÿ ôàéë: $path"
+            "ĞĞ±Ğ½Ğ¾Ğ²Ğ»ÑĞµÑ‚ÑÑ Ñ„Ğ°Ğ¹Ğ»: $path"
             $WebClient = New-Object System.Net.WebClient
             $WebClient.DownloadFile($url, $path)
 	        "OK"
-        } else {"$path - Àêòóàëåí"}
-	} catch {"Íå óäàëîñü ñêà÷àòü ($Error)"}
+        } else {"$path - ĞĞºÑ‚ÑƒĞ°Ğ»ĞµĞ½"}
+	} catch {"ĞĞµ ÑƒĞ´Ğ°Ğ»Ğ¾ÑÑŒ ÑĞºĞ°Ñ‡Ğ°Ñ‚ÑŒ ($Error)"}
 }
 
 $rulesAr=@("rules_linux.json",
