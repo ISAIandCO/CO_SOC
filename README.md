@@ -1,7 +1,5 @@
 # co_SOC
 
-![alt-текст](https://github.com/ISAIandCO/co_SOC/tree/main/SOCdo.drawio.png)
-
 ## Содержание репозитория
 
 ### ПО
