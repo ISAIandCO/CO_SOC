@@ -17,7 +17,7 @@
 | [DiskParse](https://github.com/ISAIandCO/co_SOC/tree/main/Scripts/DiskParse.ps1) | IG | Получение содержимого всех подключенных дисков |
 | [HASH_check](https://github.com/ISAIandCO/co_SOC/tree/main/Scripts/HASH_check/HASH_check.ps1) | Analysis | Автоматизированний поиск хэшей файлов (Расположенных в папке "HASH_check" рядом со скриптом) в сети (VirusTotal, OpenTip) через API |
 | [Eicar_Auto](https://github.com/ISAIandCO/co_SOC/tree/main/Scripts/Eicar_Auto.ps1) | Tool | Скрипт проверки работы СЗИ - через определенные промежутки создает файл EICAR (детектируется антивирусом) и пингует хост "Hello_There" (Требутся правило в СЗИ) |
-| [AV_Update](https://github.com/ISAIandCO/co_SOC/tree/main/Scripts/AV_Update.ps1) | Tool | Скрипт поддержания в актуальном состоянии антивирусных утилит (CureIT, KVRT и тд.) |
+| [AV_Update](Scripts/AV_Update.ps1) | Tool | Скрипт поддержания в актуальном состоянии антивирусных утилит (CureIT, KVRT и тд.) |
 
 
 ## Полезные ресурсы и ПО
@@ -44,7 +44,7 @@
 |	[Process Monitor](https://learn.microsoft.com/ru-ru/sysinternals)	|	Analysis	|	ПО, собирающее данные о работе ПО и выводящее накопившиеся данные по требованию	|
 |	[Malpedia](https://malpedia.caad.fkie.fraunhofer.de)	|	TI	|	Ресурс, агрегирующий в себе статьи\документы и тд. по обнаруженному вредоносному ПО с описанием его принципов работы с артефактами. Также приводит информацию по группировкам и предоставляет YARA правила для семейств вредоносов.	|
 |	[FileScan.IO](https://filescan.io)	|	TI	|	Проверка сущностей (URL, Хэшы, файлы и тд.) на попадание в базы антивирусов, а также подгрузка общедоступной информации о них.	|
-|	[Национальный мультисканер](virustest.gov.ru)	|	TI	|	Проверка сущностей (URL, Хэшы, файлы и тд.) на попадание в базы антивирусов, а также подгрузка общедоступной информации о них.	|
+|	[Национальный мультисканер](https://virustest.gov.ru)	|	TI	|	Проверка сущностей (URL, Хэшы, файлы и тд.) на попадание в базы антивирусов, а также подгрузка общедоступной информации о них.	|
 |	[Tor Metrics](https://metrics.torproject.org)	|	OSINT	|	Информация об активных тор-нодах	|
 |	[Cuckoo](https://cuckoo.cert.ee)	|	Analysis	|	Sandbox	|
 |	[Pulsedive](https://pulsedive.com)	|	TI	|	Проверка сущностей (URL, Хэшы, файлы и тд.) на попадание в базы антивирусов, а также подгрузка общедоступной информации о них.	|
