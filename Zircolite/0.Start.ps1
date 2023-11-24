@@ -14,11 +14,11 @@ switch ($lvl=Read-Host "Выберите тип анализа [Windows_Medium]
 3. Windows_Medium
 4. Linux
 ") {
-    1 {$cmd_a="$cmd 0.Windows --ruleset rules\rules_windows_generic_full.json --package$time"; $cmd_b="$cmd 0.Windows --ruleset rules\rules_windows_syslog_full.json --package$time";Break}
-    2 {$cmd_a="$cmd 0.Windows --ruleset rules\rules_windows_generic_high.json --package$time"; $cmd_b="$cmd 0.Windows --ruleset rules\rules_windows_syslog_high.json --package$time";Break}
-    3 {$cmd_a="$cmd 0.Windows --ruleset rules\rules_windows_generic_medium.json --package$time"; $cmd_b="$cmd 0.Windows --ruleset rules\rules_windows_syslog_medium.json --package$time";Break}
+    1 {$cmd_a="$cmd 0.Windows --ruleset rules\rules_windows_generic_full.json --package$time"; $cmd_b="$cmd 0.Windows --ruleset rules\rules_windows_sysmon_full.json --package$time";Break}
+    2 {$cmd_a="$cmd 0.Windows --ruleset rules\rules_windows_generic_high.json --package$time"; $cmd_b="$cmd 0.Windows --ruleset rules\rules_windows_sysmon_high.json --package$time";Break}
+    3 {$cmd_a="$cmd 0.Windows --ruleset rules\rules_windows_generic_medium.json --package$time"; $cmd_b="$cmd 0.Windows --ruleset rules\rules_windows_sysmon_medium.json --package$time";Break}
     4 {$cmd_a="$cmd 0.Windows --ruleset rules\rules_linux.json --package$time";Break}
-    Default {$cmd_a="$cmd 0.Windows --ruleset rules\rules_windows_generic_medium.json --package$time"; $cmd_b="$cmd 0.Windows --ruleset rules\rules_windows_syslog_medium.json --package$time"}
+    Default {$cmd_a="$cmd 0.Windows --ruleset rules\rules_windows_generic_medium.json --package$time"; $cmd_b="$cmd 0.Windows --ruleset rules\rules_windows_sysmon_medium.json --package$time"}
 }
 
 powershell -command $cmd_a
